@@ -20,12 +20,12 @@ Docker: `docker run -p 80:80 <id>`
 
 Browser: 
 
- * `http://localhost/index.php//hallo/{name}`
- * `http://localhost/index.php//welcome/{name}`
- * `http://localhost/index.php//sql/{name}`
+ * `http://localhost/index.php/hallo/{name}`
+ * `http://localhost/index.php/welcome/{name}`
+ * `http://localhost/index.php/sql/{name}`
 
 ### Deliberately non-working function
 
 Browser: 
 
- * `http://localhost/index.php//goodbye/{name}`
+ * `http://localhost/index.php/goodbye/{name}`
