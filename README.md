@@ -29,3 +29,9 @@ Browser:
 Browser: 
 
  * `http://localhost/index.php/goodbye/{name}`
+
+## Local postman testing
+
+Requires the `newman` npm package.
+
+CLI: `newman run -e postman/environment.json postman/collection.json`

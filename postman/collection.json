@@ -1,0 +1,35 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Using setNextRequest",
+		"_postman_id": "558e6b17-3094-3faa-0429-198c621a1791",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Hallo",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;",
+							"tests[\"Content is correct\"] = responseBody === \"Hallo lovely justin\"",
+							""
+                                                ]
+					}
+				}
+			],
+			"request": {
+				"url": "{{server}}hallo/justin",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
