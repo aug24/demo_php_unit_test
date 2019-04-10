@@ -34,4 +34,6 @@ Browser:
 
 Requires the `newman` npm package.
 
+First start the local docker container.
+
 CLI: `newman run -e postman/environment.json postman/collection.json`
