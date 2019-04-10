@@ -31,6 +31,50 @@
 			"response": []
 		},
 		{
+			"name": "Hallo without name with slash",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 404\"] = responseCode.code === 404;"
+                                                ]
+					}
+				}
+			],
+			"request": {
+				"url": "{{server}}hallo/",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Hallo without name",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 404\"] = responseCode.code === 404;"
+                                                ]
+					}
+				}
+			],
+			"request": {
+				"url": "{{server}}hallo",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
 			"name": "Goodbye",
 			"event": [
 				{
