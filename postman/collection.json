@@ -16,14 +16,36 @@
 						"type": "text/javascript",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;",
-							"tests[\"Content is correct\"] = responseBody === \"Hallo lovely justin\"",
-							""
+							"tests[\"Content is correct\"] = responseBody === \"Hallo lovely justin\""
                                                 ]
 					}
 				}
 			],
 			"request": {
 				"url": "{{server}}hallo/justin",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Goodbye",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;",
+							"tests[\"Content is correct\"] = responseBody === \"Goodbye you awful justin you\""
+                                                ]
+					}
+				}
+			],
+			"request": {
+				"url": "{{server}}goodbye/justin",
 				"method": "GET",
 				"header": [],
 				"body": {},
