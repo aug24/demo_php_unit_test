@@ -16,7 +16,7 @@ class TestWelcome extends UnitTestCase {
 
         sayWelcome ($request, $response, $args);
 
-        $this->assertEqual($response->getBody(), "Welcome, oh welcome ...");
+        $this->assertEqual($response->getBody(), "Welcome, oh welcome, most wonderful Justin, it is so good to see you, you lovely chap\n");
     }
 }
 ?>
