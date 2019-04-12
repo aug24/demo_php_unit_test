@@ -4,8 +4,8 @@ require_once('functions/sql.php');
 
 class DummySqlResponse {
    private $body;
-   function write($string) {$this->$body = $string; }
-   function getBody() {return $this->$body;}
+   function write($string) {$this->body = $string; }
+   function getBody() {return $this->body;}
 }
 
 class TestSql extends UnitTestCase {

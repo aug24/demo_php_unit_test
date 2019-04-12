@@ -4,8 +4,8 @@ require_once('functions/welcome.php');
 
 class DummyWelcomeResponse {
    private $body;
-   function write($string) {$this->$body = $string; }
-   function getBody() {return $this->$body;}
+   function write($string) {$this->body = $string; }
+   function getBody() {return $this->body;}
 }
 
 class TestWelcome extends UnitTestCase {

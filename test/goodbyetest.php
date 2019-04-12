@@ -4,8 +4,8 @@ require_once('functions/goodbye.php');
 
 class DummyGoodbyeResponse {
    private $body;
-   function write($string) {$this->$body = $string; }
-   function getBody() {return $this->$body;}
+   function write($string) {$this->body = $string; }
+   function getBody() {return $this->body;}
 }
 
 class TestGoodbye extends UnitTestCase {

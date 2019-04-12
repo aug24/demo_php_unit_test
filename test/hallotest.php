@@ -4,8 +4,8 @@ require_once('functions/hallo.php');
 
 class DummyHalloResponse {
    private $body;
-   function write($string) {$this->$body = $string; }
-   function getBody() {return $this->$body;}
+   function write($string) {$this->body = $string; }
+   function getBody() {return $this->body;}
 }
 
 class TestHallo extends UnitTestCase {
